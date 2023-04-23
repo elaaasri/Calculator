@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="icon" href="./imgs/calculator.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Delicious+Handrawn&family=Press+Start+2P&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -16,35 +19,44 @@
     
     <main>
         <div class="container">
+            
             <div class="display-container">
                 <div class="display"></div>
                 <div class="solution"></div>
             </div>
 
-            <div class="button-container">
+            <div class="buttons-container">
                 <button class="clear-button">AC</button>
-                <button class="back-space">C</button>
+                <button class="back-space">CE</button>
                 <button class="operator-buttons">%</button>
                 <button class="operator-buttons">/</button>
                 <button class="number-buttons">7</button>
                 <button class="number-buttons">8</button>  
                 <button class="number-buttons">9</button>
-                <button class="operator-buttons">+</button>
+                <button class="operator-buttons">*</button>
                 <button class="number-buttons">4</button>
                 <button class="number-buttons">5</button>
                 <button class="number-buttons">6</button>
-                <button class="operator-buttons">-</button>
+                <button class="operator-buttons" id="button">-</button>
                 <button class="number-buttons">1</button>
                 <button class="number-buttons">2</button>
                 <button class="number-buttons">3</button>
-                <button class="operator-buttons">*</button>
+                <button class="operator-buttons" id="plus-button">+</button>
                 <button class="number-buttons">0</button>
                 <button class="number-buttons">.</button>
-                <button class="operator-buttons">=</button>
+                <button class="operator-buttons" id="equal-button" >=</button>
             </div>
 
         </div>
     </main>
+
+    <footer class="footer">
+        Copyright © &nbsp;
+        <p>elaaasri</p>&nbsp; &nbsp;
+        <a href="https://github.com/elaaasri" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
 
 </body>
 </html>

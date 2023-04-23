@@ -72,7 +72,8 @@
             // func to show operators and calls operate() : 
         function showOperators() { 
             operatorButtons.forEach(oprBtn => { 
-                oprBtn.addEventListener("click", () => {
+                oprBtn.addEventListener("click", 
+                () => {
 
                         // fix the bug if "=" entered first : 
                     if(clickCount === 0 && oprBtn.textContent === "=") {    

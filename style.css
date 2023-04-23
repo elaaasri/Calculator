@@ -1,33 +1,135 @@
-button {
-    /* width: 50px; */
-    height: 50px;
-    border: 2px solid red;
+body {
+    background-image: linear-gradient(to left,  rgb(255, 209, 209), rgb(255, 221, 221),  rgb(255, 177, 177), rgb(255, 140, 140));
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-family: "Delicious Handrawn";
+    font-family: 'Cute Font', cursive;
+    text-shadow: 10px 10px 10px rgb(223, 116, 184);
+    font-size: 15px;
+    letter-spacing: 1rem;
+    margin-left: 20px;
+    font-style: italic;
 }
 
-.display,
-.solution {
-    /* width: 400px; */
-    height: 30px;
-    border: 2px solid green;
+main {
+    display: flex;  
+    justify-content: center;
 }
 
 .container {
+    box-shadow: 0px 15px 40px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(25, 7, 19, 0.2) 15px 15px, rgba(255, 0, 0, 0.1) 20px 20px, rgba(236, 8, 152, 0.05) 25px 25px;
     display: flex;
-    border: black solid;
-    border-radius: 20px;
+    gap: 6px;
+    border-radius: 13px;
     flex-direction: column;
     height: 350px;
-    width: 310px;
-    background-color: red;
+    width: 220px;
+    background-color: rgb(255, 209, 209);
+    padding: 8px;
 }
 
-.button-container {
+.display-container {
+    border: 0px solid transparent;
+    background-color: rgb(61, 45, 45);
+    border-radius: 8px;
+    color: rgb(255, 177, 177);
+}
+
+.buttons-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-
-    gap: 1px;
-    /* height: 350px; */
-    /* width: 300px; */
-    /* background-color: green; */
+    padding: 3px;
+    background-color: rgb(255, 221, 221);
+    border-radius: 10px;
 } 
+.display,
+.solution {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.display {
+    text-align: end;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.solution {
+    text-align: center;
+    font-style: italic;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border: 0px solid transparent;
+    margin: 1px;
+    border-radius: 4px;
+    font-weight: 700;
+    background: #ffd1d1;
+    box-shadow: 4px 5px 5px 0px rgba(255, 0, 0, 0.519);
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 wheat;
+}
+
+
+button:active {
+    background-color: rgb(255, 94, 94);
+}
+
+#plus-button {
+    height: 200%;
+}
+.operator-buttons {
+    background-color: rgb(255, 177, 177);
+}
+
+#equal-button {
+    background-color: rgb(255, 94, 94);
+}
+
+#equal-button:active {
+    background-color: rgb(255, 58, 58);
+    box-shadow: 0 12px 16px 0 rgb(255, 32, 32);
+
+}
+.back-space,
+.clear-button {
+    background-color:  rgb(255, 140, 140);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Cute Font', cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer > p {
+    font-size: 30px;
+    margin: 0;
+    font-style: italic;
+}
+
+.fa-github {
+    font-size: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.3);
+}
